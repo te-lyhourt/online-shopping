@@ -171,6 +171,11 @@ legend
   {
     font-size: 0.75rem;
   }
+  .prices-tag
+  {
+    text-align: left;
+    position: static;
+  }
 }
 
 /* send and discard */
