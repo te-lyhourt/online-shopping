@@ -40,6 +40,12 @@ span
   font-weight: 700;
   color: black;
 }
+.navbar-nav
+{
+  background-color: rgba(250, 250, 250, 0.85);
+  width: 45%;
+  border-radius: 0 0 30px;
+}
 .nav-item
 {
   padding: 0 18px;
@@ -66,13 +72,14 @@ span
 }
 .featur
 {
-  padding: 4rem 0 5rem ;
+  margin: 3.5vh 0 0 ;
+  padding-bottom: 5rem;
   text-align: center;
 }
 .featur-heading
 {
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 5vw;
   line-height: 1.5;
 }
 .featur-description
@@ -80,40 +87,70 @@ span
   color: #777;
   padding: 0 1rem;
   line-height: 1.5;
+  width: 50%;
+  display: inline-block;
+  justify-content: center;
 }
 .searchBar
 {
   width: 50vw;
-  height: 50px;
+  height: 3rem;
   border-radius: 30px;
   background-color: white;
   display: flex;
   align-items: center;
   border: solid;
-  margin:5rem auto;
+  margin: 3rem auto 2rem;
 }
 .searchBar > i
 {
   font-size: 16px;
-  position: relative;
-  left: 5px;
-  top : 4px;
+  margin: 0 1vw;
 }
 .searchBar > input
 {
-  position: relative;
-  left: 10px;
   text-align: left;
   flex : 0.95;
-  height: 35px;
   border: none;
   outline: none;
   font-size: 20px;
 }
-@media(max-width : 1028px)
-{
 
+@media(max-width : 750px)
+{
+  .featur
+  {
+    margin: 4vh 0 0 ;
+    padding:1rem 0 2rem;
+    background-color: #fafafa;
+  }
+  .featur-heading
+  {
+    font-size: 3rem;
+  }
+  .featur-description
+  {
+    width: 80%;
+    display: inline-flex;
+    justify-content: center;
+  }
+  .searchBar
+  {
+    margin: 1rem auto;
+    width: 70%;
+    height: 5vh;
+  }
+  .searchBar > i
+  {
+    font-size: 2.5vw;
+  }
+  .searchBar > input
+  {
+    font-size: 4vw;
+  }
 }
+
+
 /* promotion */
 .promotion
 {
@@ -150,15 +187,19 @@ span
 .promo-button
 {
   background-color: white;
-  position: relative;
-  top : 10px;
+  margin-top : 10px;
+  font-size : 1rem;
 }
 @media (max-width:590px) {
   .promo-items
   {
     width: 80vw;
   }
-
+  .promo-button
+  {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
 }
 /* category */
 #product-container.Bottom
@@ -182,6 +223,9 @@ span
 }
 .category-link
 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color : black;
   opacity : 0.5;
   font-size: 1.25rem;
@@ -192,6 +236,7 @@ span
   color: black;
   opacity: 1;
 }
+
 .active
 {
   opacity : 1;
@@ -236,13 +281,16 @@ span
     padding: 0 20px;
     width: 150px;
   }
-
+  .category-link #text
+  {
+    display: inline-block;
+    font-size: 3vw;
+  }
   .category-photo
   {
     width: 10vw;
   }
 }
-
 
 /* product */
 .product-section
@@ -306,8 +354,11 @@ span
   position: relative;
   padding: 0 0 0 20px;
 }
+
+/* cart */
 .cart
 {
+  
   position: relative;
   text-align: right;
   bottom: 50px;
@@ -315,6 +366,7 @@ span
 }
 .cart-butoon
 {
+  display: block;
   padding: 3px 15px;
 }
 .cart-butoon:hover

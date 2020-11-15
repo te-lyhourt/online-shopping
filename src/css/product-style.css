@@ -60,11 +60,12 @@
 {
   margin-top: 100px;
 }
+/* tag */
 .tag-row
 {
   margin: 20px 0;
 }
-
+/* change tag color */
 .btn-light
 {
   background-color: #DCDCDC;
@@ -74,7 +75,7 @@
 .price
 {
   display: inline-block;
-}
+} 
 .prices-tag
 {
   text-align: right;
@@ -138,6 +139,37 @@ legend
   .product-container
   {
     margin: 0;
+  }
+  .product-detail
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-left
+  {
+    width: 100%;
+    border: none;
+  }
+  .section-right
+  {
+    margin: 0 auto;
+  }
+  .top-row
+  {
+    display: block;
+  }
+  .button-container
+  {
+    margin-top: 0;
+  }
+  .tag-left , .tag-right
+  {
+    padding: 5px 10px;
+  }
+  .btn
+  {
+    font-size: 0.75rem;
   }
 }
 
